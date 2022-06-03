@@ -9,11 +9,14 @@ tailwind.config = {
             'very-pale-red': 'hsl(13, 100%, 96%)',
             'very-light-gray': 'hsl(0, 0%, 98%)',
           },
+          container: {
+            center: true,
+          },
       }
     }
   }
 
-
+  document.getElementById('swiper-pagination').classList.add('bottom-auto');
   let emailBox = document.getElementById('emailBox');
   let emailText = document.getElementById('emailText');
   let emailBtn = document.getElementById('emailBtn');
@@ -35,12 +38,13 @@ tailwind.config = {
 
 
 
-  let body = document.querySelector('body');
+
   let hamIcon = document.getElementById('hamIcon');
   let navLinks = document.getElementById('navLinks');
   let overlay = document.getElementById('overlay');
   
 
+  // navLinks.style.display = "none"
   hamIcon.addEventListener('click', function(){
     let mySrc = hamIcon.getAttribute('src');
     
@@ -67,6 +71,7 @@ tailwind.config = {
       slidesPerView: 1,
       spaceBetween: 10,
       freeMode: true,
+      loop: true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,

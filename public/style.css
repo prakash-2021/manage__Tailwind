@@ -1,55 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
-:root{
-    /* Primary */
-    --bright-red: hsl(12, 88%, 59%);
-    --dark-blue: hsl(228, 39%, 23%);
-    
-    /* Neutral */
-    /* --dark-grayish-blue: hsl(227, 12%, 61%); */
-    --dark-grayish-blue: hsla(0, 0%, 0%, 0.322);
-    --very-dark-blur: hsl(233, 12%, 13%);
-    --very-pale-red: hsl(13, 100%, 96%);
-    --very-light-gray: hsl(0, 0%, 98%);
-} 
 
-.background-img-tablet{
-  background-image: url(../images/bg-tablet-pattern.svg);
-  /* background-size: cover; */
-  background-repeat: no-repeat;
-  background-position: left 150% top 160%;
+:root {
+  /* Primary */
+  --bright-red: hsl(12, 88%, 59%);
+  --dark-blue: hsl(228, 39%, 23%);
+
+  /* Neutral */
+  /* --dark-grayish-blue: hsl(227, 12%, 61%); */
+  --dark-grayish-blue: hsla(0, 0%, 0%, 0.322);
+  --very-dark-blur: hsl(233, 12%, 13%);
+  --very-pale-red: hsl(13, 100%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
 }
 
-.bg__img__tab{
-  background-image: url("../images/bg-simplify-section-desktop.svg");
-  background-repeat: no-repeat;
+.bg-img-tablet {
+  top: 65em;
+  left: -30em;
 }
 
-.bg-image__tablet{
-  background-image: url(../images/bg-tablet-pattern.svg);
-  background-repeat: no-repeat;
-  background-position: left -100% top 55%;
+.button {
+  background-color: var(--bright-red);
+  padding: .8em 1.5em;
+  border-radius: 40px;
+  color: var(--very-light-gray);
+  box-shadow: 0px 9px 29px -8px var(--bright-red);
+  cursor: pointer;
+  transition: .5s;
+  font-weight: 700;
 }
 
-.container{
-  margin: 0 auto;
+.button:hover {
+  background-color: hsla(12, 100%, 67%, 0.445);
 }
 
-.button{
-    background-color: var(--bright-red);
-    padding: .8em 1.5em;
-    border-radius: 40px;
-    color: var(--very-light-gray);
-    box-shadow: 0px 9px 29px -8px var(--bright-red);
-    cursor: pointer;
-    transition: .5s;
-    font-weight: 700;
-}
-
-.button:hover{
-    background-color: hsla(12, 100%, 67%, 0.445);
-}
-
-.button--white{
+.button--white {
   background-color: var(--very-light-gray);
   padding: .8em 1.5em;
   border-radius: 40px;
@@ -60,7 +44,7 @@
   font-weight: 700;
 }
 
-.button--white:hover{
+.button--white:hover {
   color: hsla(12, 88%, 59%, 0.774);
 }
 
@@ -69,19 +53,19 @@
   display: none;
 }
 
-footer .social__icons{
+footer .social__icons {
   cursor: pointer;
 }
 
-footer .social__icons svg{
+footer .social__icons svg {
   transition: 5s;
 }
 
-footer .social__icons svg:hover path{
+footer .social__icons svg:hover path {
   fill: var(--bright-red);
 }
 
-.rounded-fifty{
+.rounded-fifty {
   border-radius: 50%;
   border: 1px solid var(--bright-red);
 }
@@ -89,77 +73,87 @@ footer .social__icons svg:hover path{
 
 
 
-.swiper{
-     overflow: visible;
+.swiper {
+  padding-top: 4em;
 }
 
 .swiper-pagination-bullet {
-	width: 12px;
-	height: 12px;
-	text-align: center;
-	line-height: 30px;
-	font-size: 12px;
-	color:#000;
-	opacity: 1;
-	background: white;
+  width: 12px;
+  height: 12px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: white;
   border: 1px solid var(--bright-red);
 }
+
 .swiper-pagination-bullet-active {
-	color:#fff;
-	background: var(--bright-red);
+  color: #fff;
+  background: var(--bright-red);
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: auto;
 }
 
 
 
-
-@media only screen and (max-width: 850px){
-  .container{
+@media only screen and (max-width: 850px) {
+  .container {
     padding: 0 2em;
   }
-  .nav-links{
-    /* display: none; */
-    /* transform: translateX(-4em) translateY(-30rem); */
+
+  .nav-links {
     padding: 2em 0em;
     width: 80vw;
     background-color: white;
     transform: translateX(1em) translateY(5em);
-    filter : brightness(100%);
+    filter: brightness(100%);
   }
 
-  .background-img-tablet{
+  #navLinks {
+    display: none;
+  }
+
+  .background-img-tablet {
     background-image: url(../images/bg-tablet-pattern.svg);
     /* background-size: contain; */
     background-repeat: no-repeat;
     background-position: left 4678% top -88%;
   }
-  
-  .bg__img__tab{
+
+  .bg__img__tab {
     background-image: url("../images/bg-simplify-section-desktop.svg");
     background-repeat: no-repeat;
   }
-  
-  .bg-image__tablet{
+
+  .bg-image__tablet {
     background-image: url(../images/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
     background-position: left 8008% top -6%;
   }
 }
 
-@media only screen and (max-width: 600px){
-  .container{
+@media only screen and (max-width: 600px) {
+  .container {
     padding: 0 1em;
   }
 
-  .background-img-tablet{
+  .background-img-tablet {
     background-size: contain;
     background-position: left 19% top -19%;
   }
 
-  .nav-links{
+  .nav-links {
     transform: translateX(1.2em) translateY(4em);
   }
 
-  .min-w-96{
+  .min-w-96 {
     min-width: 100%;
   }
 }
@@ -179,10 +173,11 @@ footer .social__icons svg:hover path{
 ::after {
   box-sizing: border-box;
   border-width: 0;
-  border-style: solid;font-family: 'Be Vietnam Pro', sans-serif;
+  border-style: solid;
+  font-family: 'Be Vietnam Pro', sans-serif;
   border-color: #e5e7eb;
   font-family: 'Be Vietnam Pro', sans-serif;
-  
+
 }
 
 ::before,
@@ -205,7 +200,7 @@ html {
   -moz-tab-size: 4;
   /* 3 */
   -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
   /* 3 */
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
@@ -221,6 +216,8 @@ body {
   /* 1 */
   line-height: inherit;
   /* 2 */
+  overflow-x: hidden;
+  /* position: relative; */
 }
 
 /*
@@ -244,7 +241,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /*
@@ -511,14 +508,16 @@ textarea {
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
 
-input::-moz-placeholder, textarea::-moz-placeholder {
+input::-moz-placeholder,
+textarea::-moz-placeholder {
   opacity: 1;
   /* 1 */
   color: #9ca3af;
   /* 2 */
 }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
   opacity: 1;
   /* 1 */
   color: #9ca3af;
@@ -588,7 +587,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
   --tw-rotate: 0;
@@ -596,16 +597,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-skew-y: 0;
   --tw-scale-x: 1;
   --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
   --tw-scroll-snap-strictness: proximity;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
   --tw-ring-color: rgb(59 130 246 / 0.5);
@@ -613,22 +614,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-brightness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-brightness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
 }
