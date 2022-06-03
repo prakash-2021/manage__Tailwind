@@ -11,6 +11,12 @@ tailwind.config = {
           },
           container: {
             center: true,
+            screens: {
+              sm: '600px',
+              md: '728px',
+              lg: '984px',
+              xl: '1200px',
+            },
           },
       }
     }
@@ -44,13 +50,12 @@ tailwind.config = {
   let overlay = document.getElementById('overlay');
   
 
-  // navLinks.style.display = "none"
   hamIcon.addEventListener('click', function(){
     let mySrc = hamIcon.getAttribute('src');
     
     if(navLinks.style.display === "none" && mySrc === '../images/icon-hamburger.svg'){
       navLinks.style.display = "block";
-      overlay.style.background = "hsla(0, 0%, 0%, 0.322)"
+      overlay.style.background = "linear-gradient(hsla(223, 20%, 93%, 0.4), hsla(210, 1%, 40%, 0.8))";
       hamIcon.setAttribute('src','../images/icon-close.svg');
     }
     else{
